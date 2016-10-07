@@ -23,6 +23,9 @@ ctrlSetText[2922, format["%1", life_settings_viewDistanceAir]];
     sliderSetPosition [(_x select 0),(_x select 1)];
 } forEach [[2901,life_settings_viewDistanceFoot],[2911,life_settings_viewDistanceCar],[2921,life_settings_viewDistanceAir]];
 
+life_settings_enableHUDStats = profileNamespace setVariable["life_settings_enableHUDStats",true];
+
+
 
 if (isNil "life_settings_tagson") then {
     life_settings_enableSidechannel = profileNamespace setVariable["life_enableSidechannel",true];
@@ -33,3 +36,4 @@ if (isNil "life_settings_tagson") then {
 CONTROL(2900,2971) cbSetChecked life_settings_enableSidechannel;
 CONTROL(2900,2970) cbSetChecked life_settings_tagson;
 CONTROL(2900,2972) cbSetChecked life_settings_revealObjects;
+CONTROL(2900,2973) cbSetChecked life_settings_enableHUDStats;

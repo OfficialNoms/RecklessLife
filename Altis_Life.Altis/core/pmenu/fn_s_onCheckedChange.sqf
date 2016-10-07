@@ -47,4 +47,15 @@ switch (_option) do {
         };
         [player,life_settings_enableSidechannel,playerSide] remoteExecCall ["TON_fnc_managesc",RSERV];
     };
+    case "hudstats": {
+        if (_state isEqualTo 1) then {
+            life_settings_enableHUDStats = true;
+            profileNamespace setVariable["life_settings_enableHUDStats",true];
+            life_settings_enableHUDStats = profileNamespace getVariable["life_settings_enableHUDStats",true];
+        } else {
+            life_settings_enableHUDStats = false;
+            profileNamespace setVariable["life_settings_enableHUDStats",false];
+            life_settings_enableHUDStats = profileNamespace getVariable["life_settings_enableHUDStats",false];
+        };
+    };
 };

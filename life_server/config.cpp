@@ -40,6 +40,7 @@ class CfgFunctions {
             class wantedAdd {};
             class wantedCrimes {};
             class wantedProfUpdate {};
+            class getPlayerBounty {};
         };
 
         class Jail_Sys {
