@@ -48,6 +48,13 @@ life_pos_attach = [];
 life_civ_position = [];
 life_markers = false;
 
+//XP System
+life_xp = 0;
+life_level = 0;
+life_level_percentToNextLevel = 0;
+life_xp_currentXPToNextLevel = 0;
+life_xp_XPToNextLevel = 0;
+
 //Settings
 life_settings_enableSidechannel = profileNamespace getVariable["life_enableSidechannel",true];
 life_settings_tagson = profileNamespace getVariable["life_settings_tagson",true];
@@ -55,6 +62,8 @@ life_settings_revealObjects = profileNamespace getVariable["life_settings_reveal
 life_settings_viewDistanceFoot = profileNamespace getVariable["life_viewDistanceFoot",1250];
 life_settings_viewDistanceCar = profileNamespace getVariable["life_viewDistanceCar",1250];
 life_settings_viewDistanceAir = profileNamespace getVariable["life_viewDistanceAir",1250];
+//HUD Stats
+life_settings_enableHUDStats = profileNamespace getVariable["life_settings_enableHUDStats",true];
 
 //Uniform price (0),Hat Price (1),Glasses Price (2),Vest Price (3),Backpack Price (4)
 life_clothing_purchase = [-1,-1,-1,-1,-1];

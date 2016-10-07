@@ -160,3 +160,13 @@ if (life_HC_isActive) then {
 diag_log "----------------------------------------------------------------------------------------------------";
 diag_log format["               End of Altis Life Client Init :: Total Execution Time %1 seconds ",(diag_tickTime) - _timeStamp];
 diag_log "----------------------------------------------------------------------------------------------------";
+
+
+
+//Start up a hud update loop because i'm a horrible person
+[] spawn {
+    for "_i" from 0 to 1 step 0 do {
+        [] call life_fnc_hudUpdate;
+        sleep 1;
+    };
+};
