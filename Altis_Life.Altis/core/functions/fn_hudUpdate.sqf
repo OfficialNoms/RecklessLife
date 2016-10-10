@@ -9,7 +9,7 @@
 disableSerialization;
 
 if (isNull LIFEdisplay) then {[] call life_fnc_hudSetup;};
-  
+   
 
 //Set Progress Bar for LIFE variables
 LIFEctrl(2200) progressSetPosition (life_hunger / 100);
